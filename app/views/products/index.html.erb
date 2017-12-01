@@ -1,6 +1,6 @@
 
 <h2>Products:</h2>
-
+<hr>
 <% if @products.any? %>
   <% @products.all.each do |product| %>
     <h3><%= link_to product.name, product_path(product) %></h3>

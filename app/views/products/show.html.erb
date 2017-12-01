@@ -1,20 +1,38 @@
-<h1> <%= @product.name %> </h1>
-
-<% if @product.reviews.any? %>
-  <% @product.reviews.each do |review| %>
-  <blockquote class='blockquote'>
-    <p><%= review.content %> </p>
-    <footer class="blockquote-footer"> <%= review.user.name %> </footer>
-  </blockquote>
-  <% end %>
-<% else %>
-  <p>There are no reviews for this product.</p>
-<% end %>
-
-<h4>Add a Comment:</h4>
-<%= form_for [@product, @review] do |f| %>
-  <div class="form-group">
-    <%= f.text_area :content, class: "form-control" %>
+<div class="row">
+  <div class="col-md-6">
+    <h1> <%= @product.name %> </h1>
+    <hr>
+    <h5>Description:</h5>
+    <h4> <%= @product.description %> </h4><br>
+    <h5>Product Type:</h5>
+    <h4> <%= @product.craft_type %> </h4><br>
+    <h5>Price:</h5>
+    <h4> $<%= @product.price %>.00 </h4>
   </div>
-  <%= f.submit class: "btn btn-info" %>
-<% end %>
+  <div class="col-md-6" id="reviews-section">
+    <div class="review-list">
+      <% if @product.reviews.any? %>
+        <h2>Product Reviews:</h2>
+        <hr>
+        <% @product.reviews.each do |review| %>
+        <blockquote class='blockquote'>
+          <p><%= review.content %> </p>
+          <footer class="blockquote-footer"> <%= review.user.name %> </footer>
+        </blockquote>
+        <% end %>
+      <% else %>
+        <p>There are no reviews for this product.</p>
+      <% end %>
+    </div>
+    
+    <h4>Add a Comment:</h4>
+    <div class="review-form">
+      <%= form_for [@product, @review] do |f| %>
+        <div class="form-group">
+          <%= f.text_area :content, class: "form-control" %>
+        </div>
+        <%= f.submit class: "btn btn-info" %>
+      <% end %>
+    </div>
+  </div>
+</div>
