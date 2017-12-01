@@ -1,1 +1,20 @@
 <h1> <%= @product.name %> </h1>
+
+<% if @product.reviews.any? %>
+  <% @product.reviews.each do |review| %>
+  <blockquote class='blockquote'>
+    <p><%= review.content %> </p>
+    <footer class="blockquote-footer"> <%= review.user.name %> </footer>
+  </blockquote>
+  <% end %>
+<% else %>
+  <p>There are no reviews for this product.</p>
+<% end %>
+
+<h4>Add a Comment:</h4>
+<%= form_for [@product, @review] do |f| %>
+  <div class="form-group">
+    <%= f.text_area :content, class: "form-control" %>
+  </div>
+  <%= f.submit class: "btn btn-info" %>
+<% end %>
