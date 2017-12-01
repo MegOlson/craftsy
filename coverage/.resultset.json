@@ -1,15 +1,26 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/Megan/craftsy/spec/models/product_spec.rb": [
+      "/Users/Megan/craftsy/spec/features/review_path_spec.rb": [
         1,
         null,
         1,
-        2,
-        2,
-        2,
-        2,
-        2,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
         null
       ],
       "/Users/Megan/craftsy/spec/rails_helper.rb": [
@@ -625,7 +636,10 @@
       ],
       "/Users/Megan/craftsy/app/controllers/products_controller.rb": [
         1,
+        null,
         1,
+        0,
+        null,
         null,
         1,
         0,
@@ -683,19 +697,43 @@
         1,
         null
       ],
+      "/Users/Megan/craftsy/spec/factories.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
       "/Users/Megan/craftsy/spec/factories/users.rb": [
-        1,
-        1,
-        1,
-        1,
-        1,
+
+      ],
+      "/Users/Megan/craftsy/spec/models/product_spec.rb": [
         1,
         null,
-        null,
         1,
-        1,
-        null,
-        null,
+        2,
+        2,
+        2,
+        2,
+        2,
         null
       ],
       "/Users/Megan/craftsy/spec/models/review_spec.rb": [
@@ -711,6 +749,6 @@
 
       ]
     },
-    "timestamp": 1512156882
+    "timestamp": 1512171660
   }
 }
