@@ -1,2 +1,17 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed');
+
+.welcome {
+  width: 50%;
+  margin-left: 25%;
+  text-align: center;
+}
+
+.welcome p {
+  font-size: 20px;
+}
+
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
