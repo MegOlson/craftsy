@@ -34,10 +34,7 @@ Feel free to contact Megan at meganannetteolson@yahoo.com
 
 ## Contributors
 
-<!-- Contributors table START -->
-| <img src="https://avatars.githubusercontent.com/MegOlson?s=100" width="100" alt="megan annette olson" /><br />[<sub>megan annette olson</sub>](https://github.com/MegOlson)<br />[💻](https://github.com/MegOlson/craftsy/commits?author=MegOlson) [⚠️](https://github.com/MegOlson/craftsy/commits?author=MegOlson) |
-| :---: | :---: |
-<!-- Contributors table END -->
+<img src="https://avatars.githubusercontent.com/MegOlson?s=100" width="100" alt="megan annette olson" /><br />[<sub>megan annette olson</sub>](https://github.com/MegOlson)<br />[💻](https://github.com/MegOlson/craftsy/commits?author=MegOlson) [⚠️](https://github.com/MegOlson/craftsy/commits?author=MegOlson)
 
 ### License
 
